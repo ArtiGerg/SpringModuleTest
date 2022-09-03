@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Űrhajók</title>
+</head>
+<body>
+
+<a href="result">Az aktív űrhajókhoz katt ide</a>
+<table>
+<tr>
+    <th>Regisztrációs kód</th>
+    <th>Név</th>
+    <th>Űrhajó osztálya</th>
+    <th>Aktív-e</th>
+</tr>
+    <tr data-th-each="s:${ship}">
+        <td data-th-text="${s.registrationCode}"></td>
+        <td data-th-text="${s.name}"></td>
+        <td data-th-text="${s.spaceShipClass}"></td>
+        <td data-th-text="${s.isActive}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
